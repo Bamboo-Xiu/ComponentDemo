@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.daojia.wen.componentlib.service.ServiceFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去“发现”组件
+                ServiceFactory.getInstance().getmFindService().launch(MainActivity.this, "");
             }
         });
 
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去“我的”组件
-
+                ServiceFactory.getInstance().getmMineService().launch(MainActivity.this,"");
             }
         });
 
@@ -30,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去“我的”组件中的 UI 页面
-
+                Bundle bundle = new Bundle();
+                ServiceFactory.getInstance().getmMineService().newUserFragment(getSupportFragmentManager(),
+                        R.id.container,bundle);
             }
         });
     }
