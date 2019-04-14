@@ -1,1 +1,1 @@
-include ':app', ':findcomponent', ':minecomponent', ':componentlib'
+include ':app', ':findcomponent', ':minecomponent', ':componentlib', ':searchcomponent'
