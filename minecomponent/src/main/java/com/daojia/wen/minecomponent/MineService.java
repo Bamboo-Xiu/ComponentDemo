@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentManager;
 import com.daojia.wen.componentlib.service.IMineService;
 
 /**
- * @author wenjinchao01@daojia-inc.com
+ * @author
  * @version 2.6.0
  * @description
  * @date 2019/4/2.

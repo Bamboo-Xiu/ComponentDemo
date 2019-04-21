@@ -38,5 +38,13 @@ public class MainActivity extends AppCompatActivity {
                         R.id.container,bundle);
             }
         });
+
+        findViewById(R.id.btn_go_search).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 去“查找”组件
+
+            }
+        });
     }
 }
