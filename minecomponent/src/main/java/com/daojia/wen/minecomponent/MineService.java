@@ -10,7 +10,7 @@ import com.daojia.wen.componentlib.service.IMineService;
 
 /**
  * @author
- * @version 2.6.0
+ * @version
  * @description
  * @date 2019/4/2.
  */

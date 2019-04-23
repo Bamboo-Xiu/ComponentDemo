@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btn_showUI).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_showMineUI).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 去“我的”组件中的 UI 页面
@@ -43,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去“查找”组件
+
+            }
+        });
+
+        findViewById(R.id.btn_showSearchUI).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 去"查找"组件中的 UI 页面
 
             }
         });
