@@ -26,10 +26,11 @@ dependencies {
     androidTestImplementation android_support_test_runner
     androidTestImplementation android_support_test_espresso_core
     implementation project(':componentlib')
-    if( !findRunAlone.toBoolean() ){
+    if (!findRunAlone.toBoolean()) {
         implementation project(':findcomponent')
     }
-    if( !mineRunAlone.toBoolean() ){
+    if (!mineRunAlone.toBoolean()) {
         implementation project(':minecomponent')
     }
+    implementation project(':searchcomponent')
 }

@@ -41,11 +41,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation android_support_appcompat_v7
     implementation android_support_constraint_layout
     testImplementation junit
     androidTestImplementation android_support_test_runner
     androidTestImplementation android_support_test_espresso_core
+    implementation project(':componentlib')
 }
