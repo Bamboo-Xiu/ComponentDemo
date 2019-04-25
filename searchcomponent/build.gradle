@@ -1,6 +1,6 @@
-if(searchRunAlone.toBoolean()){
+if (searchRunAlone.toBoolean()) {
     apply plugin: 'com.android.application'
-}else{
+} else {
     apply plugin: 'com.android.library'
 }
 
@@ -8,7 +8,7 @@ android {
     compileSdkVersion compile_sdk_version.toInteger()
 
     defaultConfig {
-        if(searchRunAlone.toBoolean()){
+        if (searchRunAlone.toBoolean()) {
             applicationId "com.daojia.wen.searchcomponent"
         }
         minSdkVersion min_sdk_version.toInteger()
@@ -20,12 +20,12 @@ android {
 
     }
 
-    sourceSets{
-        main{
+    sourceSets {
+        main {
             // 独立运行与集成调试时使用不同的 AndroidManifest.xml 文件
-            if( searchRunAlone.toBoolean() ){
+            if (searchRunAlone.toBoolean()) {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
-            }else{
+            } else {
                 manifest.srcFile 'src/main/manifest/AndroidManifest.xml'
             }
         }
@@ -44,6 +44,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation android_support_appcompat_v7
     implementation android_support_constraint_layout
+    implementation 'com.android.support:support-v4:28.0.0'
     testImplementation junit
     androidTestImplementation android_support_test_runner
     androidTestImplementation android_support_test_espresso_core

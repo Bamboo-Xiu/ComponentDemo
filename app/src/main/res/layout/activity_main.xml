@@ -35,17 +35,18 @@
             android:layout_height="wrap_content"
             android:text="跳转到“查找”组件"/>
 
+        <Button
+            android:id="@+id/btn_showSearchUI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示“我的”组件的 UserFragment"/>
+
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </FrameLayout>
 
-        <Button
-            android:id="@+id/btn_showSearchUI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="显示“我的”组件的 UserFragment"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

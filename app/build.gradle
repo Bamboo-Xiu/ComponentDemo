@@ -32,5 +32,7 @@ dependencies {
     if (!mineRunAlone.toBoolean()) {
         implementation project(':minecomponent')
     }
-    implementation project(':searchcomponent')
+    if(!searchRunAlone.toBoolean()){
+        implementation project(':searchcomponent')
+    }
 }

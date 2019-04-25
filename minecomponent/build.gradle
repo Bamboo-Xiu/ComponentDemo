@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         if(mineRunAlone.toBoolean()){
-            applicationId "com.daojia.wen.mineapplication"
+            applicationId "com.daojia.wen.minecomponent"
         }
         minSdkVersion min_sdk_version.toInteger()
         targetSdkVersion target_sdk_version.toInteger()
