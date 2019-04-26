@@ -1,7 +1,7 @@
 package com.daojia.wen.componentlib.service;
 
 /**
- * @author wenjinchao
+ * @author xiuzhizhu
  * @version 1.0.0
  * @description
  * @date 2019/4/2.
@@ -13,10 +13,20 @@ public class ServiceFactory {
         return instance;
     }
 
-    private ServiceFactory(){}
-
     private IFindService mFindService;
     private IMineService mMineService;
+    private ISearchService mSearchService;
+
+    public ISearchService getmSearchService() {
+        if(mSearchService != null){
+            mSearchService = new EmptySearchService();
+        }
+        return mSearchService;
+    }
+
+    public void setmSearchService(ISearchService mSearchService) {
+        this.mSearchService = mSearchService;
+    }
 
     public IFindService getmFindService() {
         if(mFindService == null){
