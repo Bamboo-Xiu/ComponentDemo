@@ -10,6 +10,7 @@ public class AppConfig {
 
     public static final String[] COMPONENTS = {
             "com.daojia.wen.findcomponent.FindApplication",
-            "com.daojia.wen.minecomponent.MineApplication"
+            "com.daojia.wen.minecomponent.MineApplication",
+            "com.daojia.wen.searchcomponent.SearchApplication"
     };
 }
