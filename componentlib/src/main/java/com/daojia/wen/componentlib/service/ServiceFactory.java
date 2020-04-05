@@ -18,7 +18,7 @@ public class ServiceFactory {
     private ISearchService mSearchService;
 
     public ISearchService getmSearchService() {
-        if(mSearchService != null){
+        if(mSearchService == null){
             mSearchService = new EmptySearchService();
         }
         return mSearchService;

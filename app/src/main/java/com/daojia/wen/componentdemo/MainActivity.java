@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去“查找”组件
-
+                ServiceFactory.getInstance().getmSearchService().launch(MainActivity.this,"");
             }
         });
 
@@ -51,7 +51,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 去"查找"组件中的 UI 页面
-
+                Bundle bundle = new Bundle();
+                ServiceFactory.getInstance().getmSearchService().newSearchFragment(getSupportFragmentManager(),
+                        R.id.container,bundle);
             }
         });
     }
